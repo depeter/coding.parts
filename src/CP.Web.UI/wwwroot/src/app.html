@@ -1,0 +1,28 @@
+<template>
+  <require from="./resources/elements/navigation"></require>
+  <require from="./resources/elements/footer"></require>
+
+  <!--Main Navigation-->
+  <header>
+    <navigation router.bind="router"></navigation>
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+
+    <!--Main container-->
+    <div class="container">
+
+      <router-view></router-view>
+
+    </div>
+    <!--Main container-->
+
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer blue center-on-small-only"></footer>
+  <!--/.Footer-->
+</template>

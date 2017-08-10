@@ -1,0 +1,7 @@
+ <template bindable="router">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item ${route.isActive ? 'active' : ''}" repeat.for="route of router.navigation">
+            <a class="nav-link" href="${route.href}">${route.title} <span if.bind="route.isActive" class="sr-only">(current)</span></a>
+        </li>
+    </ul>
+</template>
